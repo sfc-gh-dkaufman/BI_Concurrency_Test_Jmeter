@@ -21,10 +21,11 @@ You can use other datasets & platforms as well using the similar steps.
 ## Resoure Files needed for this test
 
 1. Install **Apache Jmeter**. [Download Here](https://jmeter.apache.org/download_jmeter.cgi)
-2. Download & UnZip [Jmeter_Snowflake_Concurrency_Test.zip](https://github.com/NickAkincilar/BI_Concurrency_Test_Jmeter/raw/main/Jmeter_Snowflake_Concurrency_Test.zip) file  This file contains:
+2. Download the most recent JDBC driver from [Maven](https://repo1.maven.org/maven2/net/snowflake/snowflake-jdbc/) and install it in Jmeter_Install_Path/lib/.
+3. Download & UnZip [Jmeter_Snowflake_Concurrency_Test.zip](https://github.com/NickAkincilar/BI_Concurrency_Test_Jmeter/raw/main/Jmeter_Snowflake_Concurrency_Test.zip) file  This file contains:
     - **Jmeter BZM Concurrency Plugin**
         - To install simply the contents of **jpgc-casutg--2.10.zip** to \Jmeter_Install_Path\lib\ folder. Once done:
         - **jmeter-plugins..0.6.jar** should be directly in the \Jmeter_Install_Path\lib\  
         - The files in \ext\ subfolder of the zip should be in \Jmeter_Install_Path\lib\ext\ 
-3. **Concurrency_Test_Snowflake_Public.jmx** Jmeter test file to run against Sample Snowflake TPCH dataset.  
-4. **Search_Filters.csv** file which has a list of valid search value combinations that will be used to contruct unique queries. 
+4. **Concurrency_Test_Snowflake_Public.jmx** Jmeter test file to run against Sample Snowflake TPCH dataset.  
+5. **Search_Filters.csv** file which has a list of valid search value combinations that will be used to contruct unique queries. 
